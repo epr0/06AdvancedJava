@@ -1,0 +1,11 @@
+.DS_Store
+/idea
+.classpath
+.project
+./settings
+/settings
+/target
+/bin
+.settings/
+.idea/
+DemoProject.iml
