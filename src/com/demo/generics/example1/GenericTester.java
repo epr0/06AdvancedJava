@@ -1,4 +1,4 @@
-package com.demo.generics;
+package com.demo.generics.example1;
 
 /*
  * There is a convention that the
