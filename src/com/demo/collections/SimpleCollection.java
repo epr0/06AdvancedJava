@@ -1,14 +1,6 @@
 package com.demo.collections;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedHashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class SimpleCollection {
 
@@ -18,21 +10,41 @@ public class SimpleCollection {
 		// Good one to quickly print array values.
 		System.out.println(Arrays.toString(values));
 
+		//bad practice
 		ArrayList<Integer> arrayList = new ArrayList<>();
 		arrayList.add(5);
 		arrayList.add(6);
 		arrayList.add(1);
 		System.out.println(Arrays.toString(arrayList.toArray()));
 
+		//Program to an interface, not to a concrete implementation OO principle
+		//To decouple your code from a specific implementation of the interface.
+		//list is an interface which arraylist implements, so it gives more flex.
+		List<Integer> listOfIntegers = new ArrayList<>();
+		listOfIntegers.add(4);
+		listOfIntegers.add(5);
+
+		//so later you can change the implementation of your list
+		//can
+		listOfIntegers = new LinkedList<>();
+		//can't
+		//arrayList = new LinkedList<>();
+
 		Collection<Object> objectCollection = new ArrayList<>();
 		objectCollection.add(1);
 		objectCollection.add("Tom");
+		objectCollection.add(5);
+		objectCollection.add("Harry");
+		objectCollection.add(true);
 		System.out.println(Arrays.toString(objectCollection.toArray()));
 
 		Set<String> setOfStrings = new HashSet<>();
 		setOfStrings.add("Edvinas");
 		setOfStrings.add("Tomas");
 		setOfStrings.add("Vladze");
+		setOfStrings.add("Edvinas");
+		setOfStrings.add("Peter");
+		setOfStrings.add("Tomas");
 		System.out.println(Arrays.toString(setOfStrings.toArray()));
 
 		System.out.println("Ordered automatically since it is a SET");
