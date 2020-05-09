@@ -1,5 +1,5 @@
 package com.demo.concurrency;
-
+//dont show
 public class SyncDemo {
 
     public static void main(String[] args) throws InterruptedException {

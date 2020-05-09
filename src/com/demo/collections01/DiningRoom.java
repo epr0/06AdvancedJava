@@ -3,6 +3,7 @@ package com.demo.collections01;
 import java.util.ArrayList;
 import java.util.List;
 
+//program to interface
 public class DiningRoom {
 
     public static void main(String[] args) {
