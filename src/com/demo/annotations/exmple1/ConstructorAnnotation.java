@@ -12,5 +12,5 @@ Annotations are primarily used by code that is inspecting other code.
  amount of code you need to write yourself to use the frameworks.
  */
 @Target({ElementType.CONSTRUCTOR})
-public @interface AnotherCoolAnnotation {
+public @interface ConstructorAnnotation {
 }

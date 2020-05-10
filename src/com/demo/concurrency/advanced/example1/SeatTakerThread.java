@@ -10,7 +10,7 @@ public class SeatTakerThread extends Thread {
 
     @Override
     public void run() {
-        bench.takeASeat();
-     //bench.methodWithSyncedCodeBlock();
+        //bench.takeASeat();
+     bench.methodWithSyncedCodeBlock();
     }
 }
