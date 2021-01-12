@@ -8,12 +8,14 @@ public class ExceptionTester5 {
 			printArrayElement(arrayToTest, 5);
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			System.out.println("Sita vieta vykdoma visada!");
 		}
 	}
 	
 	private static void printArrayElement(int[] array, int index) throws CustomException {
-		if(index < 0 || index >= array.length) {
-			throw new CustomException();
+		if(index >= array.length) {
+			throw new CustomException("Per didelis indexas");
 		}
 		System.out.println(array[index]);
 	}

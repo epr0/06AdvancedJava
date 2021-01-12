@@ -16,7 +16,12 @@ public class ExceptionTester {
 			System.out.println("Doing some calculations...");
 			int x = 5/0;
 		} catch (Exception e) {
-			System.out.println("<Exception is caught and handled.>");
+			System.out.println("<--- Exception is caught and handled. --->");
+			//the rule of thumb for throwing exceptions is pretty simple.
+			// you do so when your code has entered into an UNRECOVERABLE INVALID state.
+			// if data is compromised or you cannot wind back the processing that occurred up to the point
+			// then you must terminate it.
+			//throw new ArithmeticException("Cannot divide by zero");
 		}
 		
 		System.out.println("Moving further...");

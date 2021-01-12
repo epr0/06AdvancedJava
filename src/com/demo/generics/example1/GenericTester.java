@@ -15,7 +15,14 @@ package com.demo.generics.example1;
 public class GenericTester {
 	public static void main(String[] args) {
 		Car car = new Car();
-		GenericBox<Car> boxWithACarInside = new GenericBox<>(car);
+		GenericBox<Object> boxWithAnObjectInside = new GenericBox<>(car);
+		System.out.println(boxWithAnObjectInside.getItem());
+		Person person = new Person();
+		boxWithAnObjectInside.setItem(person);
+		System.out.println(boxWithAnObjectInside.getItem());
+
+		GenericBox<Car> boxForCar = new GenericBox<>(car);
+		GenericBox<Person> boxForPerson = new GenericBox<>(person);
 		System.out.println();
 	}
 
@@ -41,4 +48,8 @@ class GenericBox<T> {
 
 class Car {
 	
+}
+
+class Person {
+
 }

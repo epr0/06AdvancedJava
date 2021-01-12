@@ -8,5 +8,8 @@ public class CustomerMain {
 
         System.out.println(regularBankCustomer);
         System.out.println("Overall regular customer taxes - " + regularBankCustomer.overallTaxes());
+
+        RichBankCustomer richBankCustomer = new RichBankCustomer();
+        richBankCustomer.payForBoat();
     }
 }
