@@ -1,5 +1,6 @@
 package com.demo.polymorph.example2;
-
+//So polymorphism is the ability (in programming) to
+// present the same interface for differing underlying forms (data types).
 public class FruitMain {
 
     public static void main(String[] args) {
@@ -13,6 +14,10 @@ public class FruitMain {
         System.out.println("Hidden field from Parent: " + banana.getParentClassHiddenField());
 
         Fruit fruit = new Fruit();
+        fruit.getBrandName(); // only fruit stuff is accesible
+        fruit.rot();
+        fruit = new Banana();
+        fruit.rot();
 
     }
 }

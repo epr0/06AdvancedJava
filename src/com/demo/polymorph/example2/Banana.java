@@ -14,4 +14,9 @@ public class Banana extends Fruit{
     public String getParentClassHiddenField(){
         return super.brandName;
     }
+
+    @Override
+    public void rot() {
+        System.out.println("rotting like a banana in 3 days");
+    }
 }
