@@ -4,20 +4,27 @@ public class CarMain {
     public static void main(String[] args) {
         //IS - A relationship.
         //Car IS-A Car
+        //Car IS-A Vehicle
         Car car = new Car(200);
         car.setLicensePlate("HBC999");
-        //Vehicle IS-A Car
-        Vehicle vehicle = new Car(210);
+        car.drive();
+
         if(car instanceof Car){
             System.out.println("Car1 is a Car");
         }
 
-        if(vehicle instanceof Vehicle){
-            System.out.println("Vehicle1 is Vehicle");
-        }
-
         if(car instanceof Vehicle){
             System.out.println("Car1 is a Vehicle");
+        }
+
+        //Vehicle IS-A Car
+        //Vehicle = Car
+        //Vehicle = Truck.
+        //Kuriant toki objekta, galima naudoti metodus is Vehicle objekto, bet ne Car.
+        //nebutinai rodyti
+        Vehicle vehicle = new Car(210);
+        if(vehicle instanceof Vehicle){
+            System.out.println("Vehicle1 is Vehicle");
         }
 
         if(vehicle instanceof Car){
@@ -39,10 +46,14 @@ public class CarMain {
 
         //Inner classes for additional specific functionality
         Jeep jeep = new Jeep(150);
+        //Per taska pasiekiame inner class Trailer
         Jeep.Trailer trailer = jeep.new Trailer();
         trailer.setColor("Black");
         jeep.setTrailer(trailer);
         jeep.setLicensePlate("BRG123");
+
+        System.out.println("==================");
+        System.out.println(trailer instanceof Jeep.Trailer);
 
     }
 }

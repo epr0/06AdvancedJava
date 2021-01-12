@@ -1,6 +1,7 @@
 package com.demo.inheritance.example1;
-
+//paveldi vehicle savybes
 public class Jeep extends Vehicle {
+
     private Trailer trailer;
 
     public Jeep(int maxSpeed) {

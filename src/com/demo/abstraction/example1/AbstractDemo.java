@@ -28,6 +28,8 @@ public class AbstractDemo {
 }
 
 abstract class Bank {
+    public int commonBankTax = 5;
+
     public void deposit() {
         System.out.println("Common deposit method for all the banks.");
     }
@@ -44,6 +46,8 @@ class Swedbank extends Bank {
     @Override
     void calculateSpecificBankTax() {
         System.out.println("Tax amount " + 15);
+        System.out.println("Common bank tax applies: " + commonBankTax);
+
     }
 }
 
