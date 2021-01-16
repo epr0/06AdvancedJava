@@ -6,6 +6,8 @@ package com.demo.abstraction.example1;
 -Abstract class might include abstract methods (without implementation);
 -Fields,non abstract methods and static methods works the same way
 
+abstraction purpose - hide implementation details from the class that uses it
+
 ABSTRACT VS INTERFACE
 
 When we talk about abstract classes we are defining characteristics of an object type;
