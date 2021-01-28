@@ -21,10 +21,10 @@ So if the cheff changes, you don't care as long you get your pizza as ordered.
 Interface - what should be done (contract)
 Class - how it should be done
  */
+
+//can have public static fields with predefined values
+//and you cant change the value once it is set
+
 public interface Intro {
-
-    //can have public static fields with predefined values
-    //and you cant change the value once it is set
-
 
 }

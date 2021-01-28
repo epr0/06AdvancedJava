@@ -1,5 +1,7 @@
 package com.demo.exceptions;
 
+import java.math.BigDecimal;
+
 public class ExceptionTester6 {
 
     public static void main(String[] args) {
@@ -35,6 +37,8 @@ public class ExceptionTester6 {
             throw new CustomException("Nemoku istarti 7");
         }
         System.out.println(i);
+        BigDecimal te = new BigDecimal(2);
+        te.signum();
     }
 
     public void count() throws CustomException {
